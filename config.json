@@ -1,10 +1,10 @@
 {
-  "save_offline_data": true,
-  "target_stock_code": "000001",
-  "backtest_year": 3,
-  "kline_strategy": "(D5MA > D30MA) * 3",
-  "trade_strategy": {
-    "buy_rule": "DK < -2%",
-    "sell_rule": "GAIN=5%, LOSS=10%, PERIOD=60"
-  }
+    "target_stock_code": "601288",
+    "backtest_year": 3,
+    "save_offline_data": true,
+    "kline_strategy": "(M10MA > M20MA) * 3",
+    "trade_strategy": {
+        "buy_rule": "DK < -2%",
+        "sell_rule": "GAIN=5%, LOSS=10%, PERIOD=60"
+    }
 }

@@ -1,7 +1,7 @@
 import pandas as pd
 from datetime import datetime, timedelta
-from .data import get_stock_data, prepare_data_for_date
-from .strategy import evaluate_kline_strategy_on_date, evaluate_trade_strategy_buy, evaluate_trade_strategy_sell
+from data import get_stock_data, prepare_data_for_date
+from strategy import evaluate_kline_strategy_on_date, evaluate_trade_strategy_buy, evaluate_trade_strategy_sell
 
 def run_backtest(config):
     stock_codes = config.get("target_stock_code", "000001").split(';')
